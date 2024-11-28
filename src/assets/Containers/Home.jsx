@@ -1,4 +1,4 @@
-import { Footer, Header, Section } from "./styles"
+import { Footer, Header, Section, SectionTwo } from "./styles"
 
 export function Home() {
     return (
@@ -31,10 +31,10 @@ export function Home() {
                             <label htmlFor="interest">Principal interesse</label>
                             <select name="interest">
                                 <option value="" disabled selected>Selecione</option>
-                                <option value="apartment" disabled selected>Apartamentos</option>
-                                <option value="house" disabled selected>Casas</option>
-                                <option value="garden" disabled selected>Jardins</option>
-                                <option value="other" disabled selected>Outros</option>
+                                <option value="apartment">Apartamentos</option>
+                                <option value="house" >Casas</option>
+                                <option value="garden" >Jardins</option>
+                                <option value="other" >Outros</option>
                             </select>
                         </div>
                         <input type="submit" className="btn" value="Quero me inscrever" />
@@ -64,12 +64,11 @@ export function Home() {
                 </div>
             </Section>
 
-            <Section id="location">
+            <SectionTwo id="location">
                 <div id="address">
                     <i className="bi bi-geo-alt-fill"></i>
                     <div id="address-details">
                         <p>Rua do evento, 1333</p>
-                        <p>Bairro</p>
                         <p>Abertura: 14h</p>
                     </div>
                 </div>
@@ -81,7 +80,7 @@ export function Home() {
                         internos como externos.
                     </p>
                 </div>
-            </Section>
+            </SectionTwo>
 
             <Section id="details">
                 <div className="detail" id="detail-1">
@@ -136,3 +135,5 @@ export function Home() {
 }
 
 export default Home
+
+
