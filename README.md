@@ -25,7 +25,6 @@ Este projeto é uma **Landing Page** moderna e responsiva para um site de decora
 
 Certifique-se de ter instalado:
 
-- [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
 ---
