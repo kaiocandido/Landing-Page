@@ -23,7 +23,7 @@ Este projeto é uma **Landing Page** moderna e responsiva para um site de decora
 
 ## 📋 Pré-requisitos
 
-Certifique-se de ter instalado:
+Certifique-se de instalar:
 
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
