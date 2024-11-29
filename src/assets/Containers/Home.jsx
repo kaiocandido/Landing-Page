@@ -1,4 +1,7 @@
-import { Footer, Header, Section, SectionTwo } from "./styles"
+import { Cta, Footer, Header, Section, SectionThree, SectionTwo } from "./styles"
+import img4 from "../img/hrz-4.jpg"
+import img5 from "../img/hrz-5.jpg"
+import img6 from "../img/hrz-6.jpg"
 
 export function Home() {
     return (
@@ -82,9 +85,9 @@ export function Home() {
                 </div>
             </SectionTwo>
 
-            <Section id="details">
+            <SectionThree id="details">
                 <div className="detail" id="detail-1">
-                    <img src="#" alt="#" />
+                    <img src={img5} alt="#" />
                     <div className="detail-description">
                         <h3>conheça os ambiente que voce vai aprender a decorar</h3>
                     </div>
@@ -100,10 +103,10 @@ export function Home() {
                             <li>E muito mais...</li>
                         </ul>
                     </div>
-                    <img src="#" alt="#" />
+                    <img src={img4} alt="#" />
                 </div>
                 <div className="detail" id="detail-3">
-                    <img src="#" alt="#" />
+                    <img src={img6} alt="#" />
                     <div className="detail-description">
                         <h3>Objetos</h3>
                         <ul>
@@ -116,12 +119,12 @@ export function Home() {
                         </ul>
                     </div>
                 </div>
-            </Section>
+            </SectionThree>
 
-            <Section>
+            <Cta>
                 <h3>Gostou? Então se Inscreva: </h3>
                 <button className="btn">Solicitar Inscrição</button>
-            </Section>
+            </Cta>
 
             <Footer>
                 <h3>DecorarT</h3>

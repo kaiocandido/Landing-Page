@@ -4,6 +4,7 @@ import imgBackground2 from "../img/hrz-1.jpg"
 import img1 from "../img/sqr-1.jpg"
 import img2 from "../img/sqr-2.jpg"
 import img3 from "../img/sqr-3.jpg"
+import img7 from "../img/hrz-6.jpg"
 
 export const Header = styled.header`
     /*Event form*/
@@ -109,6 +110,51 @@ export const Header = styled.header`
     .btn:hover{
         opacity: 1;
     }
+
+    /*Mobile*/
+    @media (max-width: 450px) {
+        background-size: auto 100%;
+        height: auto;
+        padding: 1em;
+        
+        h2 {
+            font-size: 2em;
+        }
+
+        #disclaimer {
+            font-size: 1.5em;
+            padding: 1.5em;
+        }
+
+        .about-event,
+        .event-date {
+            font-size: 1.2em;
+        }
+
+        #subscription-form {
+            width: 100%;
+            padding: 1em;
+            max-width: 100%;
+        }
+
+        .form-group label {
+            font-size: 0.9em;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 8px;
+        }
+
+        .btn {
+            font-size: 1em;
+            padding: 10px;
+        }
+
+        #subscription-form{
+            display: none;
+        }
+    }
 `
 
 export const Section = styled.section`
@@ -159,6 +205,22 @@ export const Section = styled.section`
         background-image: url(${img3});
     }
 
+    /*mobile*/
+
+    @media (max-width: 450px){
+        .benefits{
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+            padding: 2em;
+        }
+
+        .benefit{
+            max-width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+
 `
 
 export const SectionTwo = styled.section`
@@ -205,8 +267,177 @@ export const SectionTwo = styled.section`
     #about-location p{
         line-height: 1.5em;
     }
+
+    /*mobile*/
+
+    @media (max-width: 450px){
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #address{
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #about-location{
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3{
+        margin-bottom: 0;
+    }
+
+    #about-location p{
+        display: none;
+    }
     
 `
 
-export const Footer = styled.footer``
+export const SectionThree = styled.section`
+    /*Event details container*/
+    width: 80%;
+    margin: 0 auto;
+
+    .detail{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5%;
+        margin-bottom: 4em;
+    }
+
+    .detail img{
+        width: 50%;
+    }
+
+    .detail h3{
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .detail-1 h3{
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    .detail-description{
+        width: 100%;
+        padding-left: 2em;
+    }
+
+    #detail-3 .detail-description{
+        justify-self: flex-start;
+    }
+
+    .detail-description ul{
+        list-style-position: inside;
+    }
+
+    .detail-description ul li{
+        margin-bottom: 0.4em;
+    }
+
+    
+    .detail-description ul li:last-child{
+        font-weight: bold;
+    }
+
+    @media (max-width: 450px){
+        .detail {
+            flex-direction: column;
+            margin-bottom: 0.5em;
+            gap: 0;
+        }
+
+        .detail img {
+            width: 100%;
+            margin: 2em 0;
+        }
+
+        #detail-1 img {
+            display: none;
+        }
+
+        .detail-description {
+            padding: 0;
+        }
+
+        #detail-3 img {
+            order: 2;
+        }
+
+        #detail-3 .detail-description {
+            order: 1;
+        }
+    }
+
+`
+
+export const Cta = styled.div`
+/* Call to Action Section */
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${img7});
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h3{
+        margin-bottom: 1.2em;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .btn{
+        width: 30%;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 1.2em;
+        border-radius: 10px
+    }
+
+    @media (max-width: 450px){
+        text-align: center;
+        align-items: center;
+        #cta .btn {
+            width: 80%;
+        }
+    }
+`
+
+export const Footer = styled.footer`
+/* Footer*/
+
+    text-align: center;
+    color: #95989a;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3{
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+    }
+
+    p:nth-child(2){
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+
+`
 
