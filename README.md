@@ -2,6 +2,8 @@
 
 Este projeto é uma **Landing Page** moderna e responsiva para um site de decoração, criada com **React**, **Vite** e **Styled Components**. O objetivo é proporcionar uma interface atrativa e otimizada, destacando produtos e serviços relacionados à decoração de ambientes.
 
+<a href="https://landing-page-brown-delta.vercel.app/">Site</a>
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
